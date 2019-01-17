@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <h2>hello ejs</h2>
+        <h4>This is my first post</h4>
+        <br>
+        <div>
+            <%= message %>
+            <br>
+            <%= 5+5 %>
+        </div>
+            <h2>conditional constructions</h2>
+            <div>
+                <% if(message == 'Hello World'){%>
+                    <p>Good </p>
+               <% }%>
+            </div>
+            <h2>Looping Constructs</h2>
+            <div>
+                <ul>
+                        <% for(i=0; i<people.length; i++) { %>
+                                <li>
+                                    <%= people[i] %>
+                                </li>
+                                <% } %>
+    
+                </ul>
+            </div>
+        <div>
+            <h2>ejs loop through arry of objects</h2>
+            <table border='1' cellspacing='0' cellpadding='10'>
+                <tbody>
+                        <%for(i=0; i<data.length; i++){ %>
+                             <tr>
+                                 <td>
+                                     <%= data[i].id %>
+                                 </td>
+                                 <td>
+                                        <%= data[i].name %>
+                                </td>
+                             </tr>
+                         <% } %>
+                </tbody>
+            </table>
+           </div>
+       
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body>
+    <header>
+            <% include ../partials/header %>
+    </header>
+    <main class="container-fluid">
+        <div class="jumbotron container-fluid text-center">
+                <h3>This is employees page</h3>
+             <div class="list-group">
+                 <% employees.forEach((employee) => { %>
+                    <a href="/employee/<%= employee.empID %>" class="list-group=item">
+                          <h4 class="list-group-item-heading">
+                                <%= employee.empDesignation %>
+                          </h4>
+                         <p class="list-group-item-text">
+                                <%= employee.empName %>
+                         </p>
+                    </a>    
+                    <% }) %>
+             </div>
+        </div>
+        
+    </main>
+    <footer>
+            <% include ../partials/footer %>
+    </footer>
+</body>
+</html>

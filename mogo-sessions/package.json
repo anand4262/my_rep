@@ -1,0 +1,26 @@
+{
+  "name": "mogo-sessions",
+  "version": "1.0.0",
+  "description": "This is mongo-sessions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "npm",
+    "mongo"
+  ],
+  "author": "MAHESH ANAND",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.18.3",
+    "connect-mongo": "^2.0.3",
+    "css-loader": "^2.1.0",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "mongoose": "^5.4.1",
+    "style-loader": "^0.23.1"
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body>
+    <header>
+            <% include ../partials/header %>
+    </header>
+    <main>
+        <div class="jumbotron container-fluid text-center">
+        <h2>Employee Details</h2>
+        <table class="table">
+            <tbody class="text-center">
+                <tr class="text-center">
+                    <td class="text-center">Employee ID:</td>
+                    <td>
+                        <%= empID %>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>Employee Name:</td>
+                    <td>
+                        <%= empName %>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>Employee Designation:&nbsp;&nbsp;&nbsp;</td>
+                    <td>
+                        <%= empDesignation %>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>Employee Salary</td>
+                    <td>
+                        <%= empSalary %>
+                    </td>
+                </tr>
+                <tr class="text-center">
+                    <td>Employee Location</td>
+                    <td>
+                        <%= empLocation %>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </main>
+    <footer>
+            <% include ../partials/footer %>
+    </footer>
+</body>
+</html>
